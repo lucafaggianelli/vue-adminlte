@@ -1,6 +1,6 @@
 <template>
   <div class="box box-solid" :class="color">
-    <div class="box-header with-border">
+    <div class="box-header with-border" v-if="title">
       <i class="fa" :class="'fa-' + icon"></i>
       <h3 class="box-title">{{ title }}</h3>
 
@@ -20,6 +20,17 @@
 </template>
 <script>
 export default {
-  props: ['title', 'icon', 'color']
+  props: {
+    title: {
+      type: null,
+      default: null,
+      description: 'Title for the box header, if null hide the header'
+    },
+    icon: String,
+    color: {
+      type: [String, Object],
+      description: 'One of box-warning, box-success, box-danger'
+    }
+  }
 }
 </script>
