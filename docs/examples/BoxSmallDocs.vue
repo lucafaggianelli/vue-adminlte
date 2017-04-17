@@ -1,10 +1,13 @@
 <template>
   <div class="row">
-    <h1>Small Box</h1>
+    <div class="page-header">
+      <h1>Small Box</h1>
+    </div>
+
     <div class="col-sm-offset-3 col-sm-6 col-xs-12">
       <box-small
-          header="Header"
-          tagline="Title"
+          header="3000"
+          tagline="Pictures"
           icon="camera"
           color="bg-green"></box-small>
     </div>
@@ -23,21 +26,12 @@
 </template>
 
 <script>
+import BoxSmall from '../../src/widgets'
 
 export default {
-  components: {
-
-  },
   data: function () {
     return {
-      props: [
-        {
-          'name': 'color',
-          'type': 'Background color class',
-          'default': 'bg-green',
-          'description': ''
-        }
-      ]
+      props: BoxSmall.props
     }
   }
 }

@@ -11,9 +11,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="prop in props">
-          <td>{{ prop.name }}</td>
-          <td>{{ prop.type }}</td>
+        <tr v-for="(prop, name) in props">
+          <td>{{ name }}</td>
+          <td>{{ prop.type ? prop.type.name : 'Any' }}</td>
           <td>{{ prop.default }}</td>
           <td>{{ prop.description }}</td>
         </tr>
@@ -25,7 +25,7 @@
 <script>
 export default {
   props: {
-    props: Array
+    props: null
   }
 }
 </script>
