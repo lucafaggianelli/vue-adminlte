@@ -34,3 +34,10 @@ export default {
   }
 }
 </script>
+
+<style>
+.widget-user-header {
+  background-position: center center;
+  background-size: cover;
+}
+</style>
