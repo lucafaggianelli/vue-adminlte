@@ -8,8 +8,7 @@
       <user-widget
           username="Luca Faggianelli"
           image="https://secure.gravatar.com/avatar/4d72c9837d7a9c34942b049eed899fe6"
-          backgroundImage="/static/img/user-widget-background.jpg"
-          progress="75"></user-widget>
+          backgroundImage="/static/img/user-widget-background.jpg"></user-widget>
     </example-section>
 
     <props-section :props="props"></props-section>
@@ -24,13 +23,10 @@ export default {
   data: function () {
     return {
       props: UserWidget.props,
-      source: `<info-box
-    title="Issues"
-    value="43"
-    icon="bomb"
-    description="3 less than last week"
-    progress="75"
-    color="bg-blue-gradient"></info-box>`
+      source: `<user-widget
+    username="Luca Faggianelli"
+    image="https://secure.gravatar.com/..."
+    backgroundImage="/static/img/..."></user-widget>`
     }
   }
 }

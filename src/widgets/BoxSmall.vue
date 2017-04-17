@@ -1,8 +1,8 @@
 <template>
   <div class="small-box" :class="color">
     <div class="inner">
-      <h3>{{ header }}</h3>
-      <p>{{ tagline }}</p>
+      <h3>{{ value }}</h3>
+      <p>{{ title }}</p>
     </div>
     <div class="icon">
       <i class="fa" :class="'fa-' + icon"></i>
@@ -16,8 +16,8 @@
 <script>
 export default {
   props: {
-    header: String,
-    tagline: String,
+    value: String,
+    title: String,
     icon: String,
     color: String
   }

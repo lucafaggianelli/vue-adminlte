@@ -6,7 +6,7 @@
 
     <example-section :sourcecode="source">
       <progress-bar
-          value="35"
+          progress="35"
           size="xs"></progress-bar>
     </example-section>
 
@@ -24,7 +24,7 @@ export default {
       props: ProgressBar.props,
       source: `
 <progress-bar
-    value="35"
+    progress="35"
     size="xs"></progress-bar>`
     }
   }

@@ -7,7 +7,7 @@
     <example-section :sourcecode="source">
       <box
           title="Box Title"
-          tagline="Pictures"
+          color="box-success"
           icon="info">
         <h2>Content here</h2>
         <ol>
@@ -29,11 +29,10 @@ export default {
   data: function () {
     return {
       props: Box.props,
-      source: `<box-small
-    header="3000"
-    tagline="Pictures"
-    icon="camera"
-    color="bg-green"></box-small>`
+      source: `<box
+    title="Box Title"
+    color="box-success"
+    icon="info">`
     }
   }
 }

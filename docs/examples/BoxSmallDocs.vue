@@ -6,10 +6,10 @@
 
     <example-section :sourcecode="source">
       <box-small
-          header="3000"
-          tagline="Pictures"
+          value="3000"
+          title="Pictures"
           icon="camera"
-          color="bg-green"></box-small>
+          color="bg-green-gradient"></box-small>
     </example-section>
 
     <props-section :props="props"></props-section>
@@ -26,8 +26,8 @@ export default {
     return {
       props: BoxSmall.props,
       source: `<box-small
-    header="3000"
-    tagline="Pictures"
+    value="3000"
+    title="Pictures"
     icon="camera"
     color="bg-green"></box-small>`
     }

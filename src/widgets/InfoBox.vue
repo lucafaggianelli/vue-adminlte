@@ -18,12 +18,25 @@
 <script>
 export default {
   props: {
-    title: null,
-    value: null,
-    description: null,
+    title: {
+      type: null,
+      description: 'Upper text'
+    },
+    value: {
+      type: null,
+      description: 'Central bold text'
+    },
+    description: {
+      type: null,
+      description: 'Bottom text'
+    },
     icon: String,
     color: null,
-    progress: Number,
+    progress: {
+      type: [Number, String],
+      default: 0,
+      description: 'Number between 0 and 100 for the progress bar'
+    },
     loading: {
       type: Boolean,
       default: false
