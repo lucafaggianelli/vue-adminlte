@@ -5,6 +5,7 @@
     <box-small-docs></box-small-docs>
     <info-box-docs></info-box-docs>
     <progress-bar-docs></progress-bar-docs>
+    <user-widget-docs></user-widget-docs>
   </div>
 </template>
 
@@ -12,12 +13,14 @@
 import BoxSmallDocs from './examples/BoxSmallDocs.vue'
 import InfoBoxDocs from './examples/InfoBoxDocs.vue'
 import ProgressBarDocs from './examples/ProgressBarDocs.vue'
+import UserWidgetDocs from './examples/UserWidgetDocs.vue'
 
 export default {
   components: {
     BoxSmallDocs,
     InfoBoxDocs,
-    ProgressBarDocs
+    ProgressBarDocs,
+    UserWidgetDocs
   }
 }
 </script>
