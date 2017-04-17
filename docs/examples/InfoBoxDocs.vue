@@ -33,9 +33,6 @@
 import { InfoBox } from '../../src/widgets'
 
 export default {
-  components: {
-
-  },
   data: function () {
     return {
       props: InfoBox.props
