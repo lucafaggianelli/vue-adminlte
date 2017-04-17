@@ -1,0 +1,5 @@
+export { default as Box } from './Box.vue'
+export { default as BoxSmall } from './BoxSmall.vue'
+export { default as InfoBox } from './InfoBox.vue'
+export { default as ProgressBar } from './ProgressBar.vue'
+export { default as UserWidget } from './UserWidget.vue'

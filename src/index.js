@@ -1,9 +1,19 @@
 import Hello from './Hello.vue'
-import HelloJsx from './Hello.jsx'
+import {
+  Box,
+  BoxSmall,
+  InfoBox,
+  ProgressBar,
+  UserWidget
+} from './widgets'
 
 function plugin (Vue) {
   Vue.component('hello', Hello)
-  Vue.component('hello-jsx', HelloJsx)
+  Vue.component('box', Box)
+  Vue.component('box-small', BoxSmall)
+  Vue.component('info-box', InfoBox)
+  Vue.component('progress-bar', ProgressBar)
+  Vue.component('user-widget', UserWidget)
 }
 
 // Install by default if using the script tag
@@ -16,6 +26,13 @@ const version = '__VERSION__'
 // Export all components too
 export {
   Hello,
-  HelloJsx,
   version
+}
+
+export {
+  Box,
+  BoxSmall,
+  InfoBox,
+  ProgressBar,
+  UserWidget
 }
