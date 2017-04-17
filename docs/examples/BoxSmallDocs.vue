@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="row">
     <div class="page-header">
       <h1>Small Box</h1>
     </div>
@@ -21,6 +21,7 @@
 import { BoxSmall } from '../../src/widgets'
 
 export default {
+  name: 'BoxSmallDocs',
   data: function () {
     return {
       props: BoxSmall.props,

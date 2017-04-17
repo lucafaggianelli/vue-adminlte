@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="row">
     <div class="page-header">
       <h1>User Widget</h1>
     </div>
@@ -20,6 +20,7 @@
 import { UserWidget } from '../../src/widgets'
 
 export default {
+  name: 'UserWidgetDocs',
   data: function () {
     return {
       props: UserWidget.props,

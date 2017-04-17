@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="row">
     <div class="page-header">
       <h1>Info Box</h1>
     </div>
@@ -22,6 +22,7 @@
 import { InfoBox } from '../../src/widgets'
 
 export default {
+  name: 'InfoBoxDocs',
   data: function () {
     return {
       props: InfoBox.props,

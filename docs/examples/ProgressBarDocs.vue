@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="row">
     <div class="page-header">
       <h1>Progress Bar</h1>
     </div>
@@ -18,6 +18,7 @@
 import { ProgressBar } from '../../src/widgets'
 
 export default {
+  name: 'ProgressBarDocs',
   data: function () {
     return {
       props: ProgressBar.props,
