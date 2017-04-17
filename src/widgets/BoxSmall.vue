@@ -15,7 +15,11 @@
 </template>
 <script>
 export default {
-  name: 'BoxSmall',
-  props: ['header', 'tagline', 'icon', 'color']
+  props: {
+    header: String,
+    tagline: String,
+    icon: String,
+    color: String
+  }
 }
 </script>

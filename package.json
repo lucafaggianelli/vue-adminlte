@@ -139,5 +139,8 @@
   "license": {
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/mit-license.php"
+  },
+  "dependencies": {
+    "vue-highlightjs": "^1.2.2"
   }
 }

@@ -1,21 +1,14 @@
 <template>
-  <div class="row">
+  <div>
     <div class="page-header">
       <h1>Progress Bar</h1>
     </div>
 
-    <div class="col-sm-offset-3 col-sm-6 col-xs-12">
+    <example-section :sourcecode="source">
       <progress-bar
           value="35"
           size="xs"></progress-bar>
-    </div>
-    <div class="col-xs-12">
-      <pre>
-        &lt;progress-bar
-            value="35"
-            size="xs"&gt;&lt;/progress-bar&gt;
-      </pre>
-    </div>
+    </example-section>
 
     <props-section :props="props"></props-section>
   </div>
@@ -27,7 +20,11 @@ import { ProgressBar } from '../../src/widgets'
 export default {
   data: function () {
     return {
-      props: ProgressBar.props
+      props: ProgressBar.props,
+      source: `
+<progress-bar
+    value="35"
+    size="xs"></progress-bar>`
     }
   }
 }
