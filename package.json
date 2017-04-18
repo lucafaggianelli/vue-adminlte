@@ -17,7 +17,6 @@
     "build": "node build/build.js",
     "build:dll": "webpack --progress --config build/webpack.config.dll.js",
     "docs": "webpack-dev-server --config build/webpack.config.docs.js --content-base=docs/ --open --port=8084",
-    "postinstall": "yon run build:dll",
     "lint": "yon run lint:js && yon run lint:css",
     "lint:js": "eslint --ext js --ext jsx --ext vue src test/**/*.spec.js test/*.js build",
     "lint:js:fix": "yon run lint:js -- --fix",
