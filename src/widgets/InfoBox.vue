@@ -1,6 +1,6 @@
 <template>
-  <div class="info-box" :class="color">
-    <span class="info-box-icon">
+  <div class="info-box" :class="bgColor">
+    <span class="info-box-icon" :class="color">
       <i class="fa" :class="['fa-' + icon, {'fa-spin': loading}]"></i>
     </span>
 
@@ -8,7 +8,7 @@
       <span class="info-box-text">{{ title }}</span>
       <span class="info-box-number">{{ value }}</span>
 
-      <div class="progress">
+      <div class="progress" v-if="progress">
         <div class="progress-bar" :style="{width: progress + '%'}"></div>
       </div>
       <span class="progress-description">{{ description }}</span>
@@ -31,6 +31,7 @@ export default {
       description: 'Bottom text'
     },
     icon: String,
+    bgColor: null,
     color: null,
     progress: {
       type: [Number, String],

@@ -11,7 +11,7 @@
           icon="bomb"
           description="3 less than last week"
           progress="75"
-          color="bg-blue-gradient"></info-box>
+          bg-color="bg-blue-gradient"></info-box>
     </example-section>
 
     <props-section :props="props"></props-section>
