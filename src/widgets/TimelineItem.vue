@@ -3,9 +3,17 @@
       <!-- timeline icon -->
       <i class="fa" :class="['fa-'+icon, iconColor]"></i>
       <div class="timeline-item">
-          <span class="time"><i class="fa fa-clock-o"></i> {{ time }}</span>
+          <span class="time" :title="dateFull"><i class="fa fa-clock-o"></i>
+            {{ dateFromNow }}</span>
 
-          <h3 class="timeline-header"><a href="#">{{ title }}</a></h3>
+          <div class="timeline-header" v-if="author">
+            <div class="user-block">
+              <img class="img-circle" :src="author.image" alt="User Image">
+              <span class="username"><a href="#">{{ title }}</a></span>
+              <span class="description">{{ author.name }}</span>
+            </div>
+          </div>
+          <h3 class="timeline-header" v-else><a href="#">{{ title }}</a></h3>
 
           <div class="timeline-body">
             <slot></slot>
@@ -18,12 +26,23 @@
   </li>
 </template>
 <script>
+import moment from 'moment'
+
 export default {
   props: {
     icon: null,
     iconColor: null,
-    time: null,
-    title: String
+    date: [String, Date],
+    title: String,
+    author: Object
+  },
+  computed: {
+    dateFromNow: function () {
+      return moment(this.date).fromNow()
+    },
+    dateFull: function () {
+      return moment(this.date).format('LLL')
+    }
   }
 }
 </script>

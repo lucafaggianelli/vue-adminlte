@@ -1,6 +1,6 @@
 {
   "name": "vue-adminlte",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AdminLTE Vue components",
   "author": "Luca Faggianelli <luca.faggianelli@gmail.com>",
   "main": "dist/vue-adminlte.common.js",
@@ -140,6 +140,7 @@
     "url": "http://www.opensource.org/licenses/mit-license.php"
   },
   "dependencies": {
+    "moment": "^2.18.1",
     "vue-highlightjs": "^1.2.2"
   }
 }

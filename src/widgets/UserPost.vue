@@ -32,7 +32,7 @@ export default {
     userImage: String,
     username: String,
     description: String,
-    date: [String, Object]
+    date: [String, Date]
   }
 }
 </script>
