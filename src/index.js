@@ -4,6 +4,8 @@ import {
   BoxSmall,
   InfoBox,
   ProgressBar,
+  Timeline,
+  TimelineItem,
   UserWidget
 } from './widgets'
 
@@ -13,6 +15,8 @@ function plugin (Vue) {
   Vue.component('box-small', BoxSmall)
   Vue.component('info-box', InfoBox)
   Vue.component('progress-bar', ProgressBar)
+  Vue.component('timeline', Timeline)
+  Vue.component('timeline-item', TimelineItem)
   Vue.component('user-widget', UserWidget)
 }
 
@@ -34,5 +38,7 @@ export {
   BoxSmall,
   InfoBox,
   ProgressBar,
+  Timeline,
+  TimelineItem,
   UserWidget
 }
