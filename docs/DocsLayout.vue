@@ -25,6 +25,7 @@ import BoxSmallDocs from './examples/BoxSmallDocs.vue'
 import InfoBoxDocs from './examples/InfoBoxDocs.vue'
 import ProgressBarDocs from './examples/ProgressBarDocs.vue'
 import TimelineDocs from './examples/TimelineDocs.vue'
+import UserPostDocs from './examples/UserPostDocs.vue'
 import UserWidgetDocs from './examples/UserWidgetDocs.vue'
 
 const ALL_COMPONENTS = {
@@ -33,6 +34,7 @@ const ALL_COMPONENTS = {
   InfoBoxDocs,
   ProgressBarDocs,
   TimelineDocs,
+  UserPostDocs,
   UserWidgetDocs
 }
 

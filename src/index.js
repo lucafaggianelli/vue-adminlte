@@ -6,6 +6,7 @@ import {
   ProgressBar,
   Timeline,
   TimelineItem,
+  UserPost,
   UserWidget
 } from './widgets'
 
@@ -17,6 +18,7 @@ function plugin (Vue) {
   Vue.component('progress-bar', ProgressBar)
   Vue.component('timeline', Timeline)
   Vue.component('timeline-item', TimelineItem)
+  Vue.component('user-post', UserPost)
   Vue.component('user-widget', UserWidget)
 }
 
@@ -40,5 +42,6 @@ export {
   ProgressBar,
   Timeline,
   TimelineItem,
+  UserPost,
   UserWidget
 }
