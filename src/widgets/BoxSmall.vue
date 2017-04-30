@@ -19,7 +19,7 @@ export default {
     value: String,
     title: String,
     icon: String,
-    color: String
+    color: null
   }
 }
 </script>
